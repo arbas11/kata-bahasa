@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/monas.jpeg");
+  background-image: url("../images/monas.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 .button-question-container {
@@ -50,4 +49,55 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  .benar-score {
+    color: greenyellow;
+  }
+  .salah-score {
+    color: red;
+  }
+}
+.benar-container {
+  img {
+    height: 35px;
+    width: 35px;
+  }
+}
+.salah-container {
+  img {
+    height: 25px;
+    width: 25px;
+  }
+}
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .modal-content {
+    border-radius: 30px;
+    height: 50%;
+    .modal-body {
+      .benar-salah-container {
+        height: 100%;
+        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center;
+        .scoring-board {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .benar-score {
+            font-size: 3em;
+            color: greenyellow;
+          }
+          .salah-score {
+            font-size: 3em;
+            color: red;
+          }
+        }
+      }
+    }
+  }
 }

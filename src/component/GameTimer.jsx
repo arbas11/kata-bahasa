@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, setGameOn, benar}) {
+function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, setGameOn, benar, salah, setOpenScoreModal}) {
     const [count, setCount] = useState(20);
     useEffect(() => {
         setCount(20)
@@ -9,6 +9,9 @@ function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, 
     useEffect(() => {
         setCount(20)
     }, [benar])
+    useEffect(() => {
+        setCount(count - 5)
+    }, [salah])
     useEffect(() => {
         let timer = level === 1 &&  setInterval(() =>{        
             setCount(count - 1);}, 1000)
@@ -46,7 +49,8 @@ function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, 
     }, [count])
     useEffect(()=>{
         if(count < 0){
-                setGameTimerOn(false)
+                setGameTimerOn(false);
+                setOpenScoreModal(true)
                 setGameOn(false);
                 setFromStart(true);
         }
@@ -55,7 +59,7 @@ function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, 
   return (
     <div>
         {count >= 1 && <h1>{count}</h1>}
-        {count === 0 && <h1>{count}</h1>}
+        {count === 0 && <h1>waktu habis</h1>}
     </div>
   )
 }
