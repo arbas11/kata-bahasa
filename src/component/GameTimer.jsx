@@ -49,10 +49,10 @@ function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, 
     }, [count])
     useEffect(()=>{
         if(count < 0){
-            const currentHighScore = localStorage.getItem("highscore")
+            const currentHighScore = JSON.parse(localStorage.getItem("highscore"))
             if(currentHighScore[0] < benar){
-                localStorage.setItem("highscore", [benar, salah]);
-                setHighScore(localStorage.getItem("highscore"));
+                localStorage.setItem("highscore", JSON.stringify([benar, salah]));
+                setHighScore(JSON.parse(localStorage.getItem("highscore")));
             }
                 setGameTimerOn(false);
                 setOpenScoreModal(true)

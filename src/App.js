@@ -21,12 +21,11 @@ function App() {
   }, [score]);
 
   useEffect(() => {
-    const getHighScore = localStorage.getItem("highscore");
-    console.log(getHighScore);
+    const getHighScore = JSON.parse(localStorage.getItem("highscore"));
     if (getHighScore === null) {
-      localStorage.setItem("highscore", [benar, salah]);
+      localStorage.setItem("highscore", JSON.stringify([benar, salah]));
     } else {
-      setHighScore(localStorage.getItem("highscore"));
+      setHighScore(JSON.parse(localStorage.getItem("highscore")));
     }
   }, []);
 
@@ -59,7 +58,7 @@ function App() {
             <h3>Highscore</h3>
             <div className="high-salah-benar">
               <h3>{highscore[0]}</h3>
-              <h3>{highscore[2]}</h3>
+              <h3>{highscore[1]}</h3>
             </div>
           </div>
           <div className="selamat-datang-container">
