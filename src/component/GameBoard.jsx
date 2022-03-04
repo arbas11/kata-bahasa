@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Button } from 'reactstrap';
 import questions from '../Questions'
 import GameTimer from './GameTimer';
-import wrong from '../images/wrong.png';
-import correct from '../images/correct.png';
 
-function GameBoard({setFromStart, setGameOn, gameOn, benar, setBenar, salah, setSalah, setOpenScoreModal}) {
+function GameBoard({setFromStart, setGameOn, gameOn, benar, setBenar, salah, setSalah, setOpenScoreModal, highscore, setHighScore}) {
     const [questToShow, setQuestToShow] = useState([])
     const [theNum, setTheNum] = useState(0)
     const [next, setNext] = useState(0)
@@ -39,7 +37,7 @@ function GameBoard({setFromStart, setGameOn, gameOn, benar, setBenar, salah, set
         }
     },[benar])
 
-    useEffect(async() => {
+    useEffect(() => {
         const index = toPickNum[next]
         let theQuest = '';
         if(index){
@@ -69,6 +67,11 @@ function GameBoard({setFromStart, setGameOn, gameOn, benar, setBenar, salah, set
     }
 
     function resetGame(){
+        const currentHighScore = localStorage.getItem("highscore")
+        if(currentHighScore[0] < benar){
+            localStorage.setItem("highscore", [benar, salah]);
+            setHighScore(localStorage.getItem("highscore"));
+        }
         setGameOn(false);
         setOpenScoreModal(true);
         setFromStart(true);
@@ -86,6 +89,8 @@ function GameBoard({setFromStart, setGameOn, gameOn, benar, setBenar, salah, set
         benar={benar}
         salah={salah}
         setOpenScoreModal={setOpenScoreModal}
+        highscore={highscore}
+        setHighScore={setHighScore}
         />
         <>
         {theNum === 1 &&
@@ -101,11 +106,11 @@ function GameBoard({setFromStart, setGameOn, gameOn, benar, setBenar, salah, set
         </>
         {theAnswer === "correct" && 
         <div className='benar-container'>
-        <img src={correct}/>
+        <div className='anda-benar'></div>
         </div>}
         {theAnswer === "wrong" && 
         <div className='salah-container'>
-        <p className="kurang-tepat"><img src={wrong}/></p>
+        <div className="kurang-tepat"></div>
         <p className='explain'>{questToShow.explain}</p>
         </div>}
         <div className='benar-salah-container'>

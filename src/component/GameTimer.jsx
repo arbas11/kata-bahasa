@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, setGameOn, benar, salah, setOpenScoreModal}) {
+function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, setGameOn, benar, salah, setOpenScoreModal, highscore, setHighScore}) {
     const [count, setCount] = useState(20);
     useEffect(() => {
         setCount(20)
@@ -49,6 +49,11 @@ function GameTimer({level, setLevel, setGameTimerOn, gameTimerOn, setFromStart, 
     }, [count])
     useEffect(()=>{
         if(count < 0){
+            const currentHighScore = localStorage.getItem("highscore")
+            if(currentHighScore[0] < benar){
+                localStorage.setItem("highscore", [benar, salah]);
+                setHighScore(localStorage.getItem("highscore"));
+            }
                 setGameTimerOn(false);
                 setOpenScoreModal(true)
                 setGameOn(false);

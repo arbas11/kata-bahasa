@@ -11,6 +11,7 @@ function App() {
   const [benar, setBenar] = useState(0);
   const [salah, setSalah] = useState(0);
   const [score, setScore] = useState(false);
+  const [highscore, setHighScore] = useState([]);
   const [openScoreModal, setOpenScoreModal] = useState(false);
 
   useEffect(() => {
@@ -18,6 +19,16 @@ function App() {
     setSalah(0);
     setScore(false);
   }, [score]);
+
+  useEffect(() => {
+    const getHighScore = localStorage.getItem("highscore");
+    console.log(getHighScore);
+    if (getHighScore === null) {
+      localStorage.setItem("highscore", [benar, salah]);
+    } else {
+      setHighScore(localStorage.getItem("highscore"));
+    }
+  }, []);
 
   function readySetGameOn() {
     setScore(true);
@@ -38,14 +49,28 @@ function App() {
           setSalah={setSalah}
           openScoreModal={openScoreModal}
           setOpenScoreModal={setOpenScoreModal}
+          highscore={highscore}
+          setHighScore={setHighScore}
         />
       )}
       {fromStart && (
-        <div>
-          <h1>selamat datang!</h1>
-          <Button className="start-button btn-danger" onClick={readySetGameOn}>
-            Mulai!
-          </Button>
+        <div className="home-container">
+          <div className="highscore-board">
+            <h3>Highscore</h3>
+            <div className="high-salah-benar">
+              <h3>{highscore[0]}</h3>
+              <h3>{highscore[2]}</h3>
+            </div>
+          </div>
+          <div className="selamat-datang-container">
+            <h1>selamat datang!</h1>
+            <Button
+              className="start-button btn-danger"
+              onClick={readySetGameOn}
+            >
+              Mulai!
+            </Button>
+          </div>
         </div>
       )}
       {timerOut && (
