@@ -15,6 +15,10 @@ function App() {
   const [openScoreModal, setOpenScoreModal] = useState(false);
 
   useEffect(() => {
+    document.title = "katabahasa";
+  });
+
+  useEffect(() => {
     setBenar(0);
     setSalah(0);
     setScore(false);
