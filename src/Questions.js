@@ -1,12 +1,12 @@
 const questions = [
   {
     correct: "bapak pergi kepasar",
-    wrong: "bapak ke pasar",
+    wrong: "bapak pargi kepasar",
     explain: "ya karena salah",
   },
   {
     correct: "ibu menanam pohon",
-    wrong: "ibu ditanam pohon",
+    wrong: "ibu metanam pohon",
     explain: "ya karena salah",
   },
   {
@@ -31,7 +31,7 @@ const questions = [
   },
   {
     correct: "bambang menjadi presiden",
-    wrong: "presiden dijadikan bambang",
+    wrong: "bambang manjedi presiden",
     explain: "ya karena salah",
   },
   {
@@ -41,7 +41,7 @@ const questions = [
   },
   {
     correct: "siti memakan nasi",
-    wrong: "nasi memakan siti",
+    wrong: "siti memaken nasi",
     explain: "ya karena salah",
   },
   {
@@ -51,42 +51,42 @@ const questions = [
   },
   {
     correct: "budi menyetir mobil",
-    wrong: "budi disetirkan mobil",
+    wrong: "budi disetir mobil",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu mecaci maki",
-    wrong: "ibu maki dicaci",
+    correct: "ibu mencuci baju",
+    wrong: "baju mencuci ibu",
     explain: "ya karena salah",
   },
   {
     correct: "badu memanen padi",
-    wrong: "padi memanen singkong",
+    wrong: "badu memanan padi",
     explain: "ya karena salah",
   },
   {
     correct: "bapak pergi ke pasar",
-    wrong: "pasar di beli bapak",
+    wrong: "bapak pasar ke pergi",
     explain: "ya karena salah",
   },
   {
-    correct: "si aminah belajar mengaji",
-    wrong: "alhamdulillah",
+    correct: "si aminah sedang belajar",
+    wrong: "si aminah sedang belajer",
     explain: "ya karena salah",
   },
   {
-    correct: "ini semua cuma ngetest",
-    wrong: "ya ini salah harusnya",
+    correct: "ini yang salah",
+    wrong: "ya ini yang saleh",
     explain: "ya karena salah",
   },
   {
     correct: "bapak banyak berbuat salah",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang salah",
     explain: "ya karena salah",
   },
   {
     correct: "tuti menjemur pakaian",
-    wrong: "pakaian menjemur tuti",
+    wrong: "tati menjemur pekaian",
     explain: "ya karena salah",
   },
   {
@@ -96,12 +96,12 @@ const questions = [
   },
   {
     correct: "kepasar bapak pergi",
-    wrong: "ini salah jalan",
+    wrong: "ini salah jelan",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan banyak",
-    wrong: "makan ibu banyak",
+    correct: "ibu makan bamyak",
+    wrong: "ibu kenyang",
     explain: "ya karena salah",
   },
   {
@@ -111,12 +111,12 @@ const questions = [
   },
   {
     correct: "bapak pergi kepasar",
-    wrong: "bapak ke pasar",
+    wrong: "bapak pargi kepasar",
     explain: "ya karena salah",
   },
   {
     correct: "ibu menanam pohon",
-    wrong: "ibu ditanam pohon",
+    wrong: "ibu metanam pohon",
     explain: "ya karena salah",
   },
   {
@@ -141,7 +141,7 @@ const questions = [
   },
   {
     correct: "bambang menjadi presiden",
-    wrong: "presiden dijadikan bambang",
+    wrong: "bambang manjedi presiden",
     explain: "ya karena salah",
   },
   {
@@ -151,7 +151,7 @@ const questions = [
   },
   {
     correct: "siti memakan nasi",
-    wrong: "nasi memakan siti",
+    wrong: "siti memaken nasi",
     explain: "ya karena salah",
   },
   {
@@ -161,42 +161,42 @@ const questions = [
   },
   {
     correct: "budi menyetir mobil",
-    wrong: "budi disetirkan mobil",
+    wrong: "budi disetir mobil",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu mecaci maki",
-    wrong: "ibu maki dicaci",
+    correct: "ibu mencuci baju",
+    wrong: "baju mencuci ibu",
     explain: "ya karena salah",
   },
   {
     correct: "badu memanen padi",
-    wrong: "padi memanen singkong",
+    wrong: "badu memanan padi",
     explain: "ya karena salah",
   },
   {
     correct: "bapak pergi ke pasar",
-    wrong: "pasar di beli bapak",
+    wrong: "bapak pasar ke pergi",
     explain: "ya karena salah",
   },
   {
-    correct: "si aminah belajar mengaji",
-    wrong: "alhamdulillah",
+    correct: "si aminah sedang belajar",
+    wrong: "si aminah sedang belajer",
     explain: "ya karena salah",
   },
   {
-    correct: "ini semua cuma ngetest",
-    wrong: "ya ini salah harusnya",
+    correct: "ini yang salah",
+    wrong: "ya ini yang saleh",
     explain: "ya karena salah",
   },
   {
     correct: "bapak banyak berbuat salah",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang salah",
     explain: "ya karena salah",
   },
   {
     correct: "tuti menjemur pakaian",
-    wrong: "pakaian menjemur tuti",
+    wrong: "tati menjemur pekaian",
     explain: "ya karena salah",
   },
   {
@@ -206,12 +206,12 @@ const questions = [
   },
   {
     correct: "kepasar bapak pergi",
-    wrong: "ini salah jalan",
+    wrong: "ini salah jelan",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan banyak",
-    wrong: "makan ibu banyak",
+    correct: "ibu makan bamyak",
+    wrong: "ibu kenyang",
     explain: "ya karena salah",
   },
   {
@@ -221,12 +221,12 @@ const questions = [
   },
   {
     correct: "bapak pergi kepasar",
-    wrong: "bapak ke pasar",
+    wrong: "bapak pargi kepasar",
     explain: "ya karena salah",
   },
   {
     correct: "ibu menanam pohon",
-    wrong: "ibu ditanam pohon",
+    wrong: "ibu metanam pohon",
     explain: "ya karena salah",
   },
   {
@@ -251,7 +251,7 @@ const questions = [
   },
   {
     correct: "bambang menjadi presiden",
-    wrong: "presiden dijadikan bambang",
+    wrong: "bambang manjedi presiden",
     explain: "ya karena salah",
   },
   {
@@ -261,7 +261,7 @@ const questions = [
   },
   {
     correct: "siti memakan nasi",
-    wrong: "nasi memakan siti",
+    wrong: "siti memaken nasi",
     explain: "ya karena salah",
   },
   {
@@ -271,42 +271,42 @@ const questions = [
   },
   {
     correct: "budi menyetir mobil",
-    wrong: "budi disetirkan mobil",
+    wrong: "budi disetir mobil",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu mecaci maki",
-    wrong: "ibu maki dicaci",
+    correct: "ibu mencuci baju",
+    wrong: "baju mencuci ibu",
     explain: "ya karena salah",
   },
   {
     correct: "badu memanen padi",
-    wrong: "padi memanen singkong",
+    wrong: "badu memanan padi",
     explain: "ya karena salah",
   },
   {
     correct: "bapak pergi ke pasar",
-    wrong: "pasar di beli bapak",
+    wrong: "bapak pasar ke pergi",
     explain: "ya karena salah",
   },
   {
-    correct: "si aminah belajar mengaji",
-    wrong: "alhamdulillah",
+    correct: "si aminah sedang belajar",
+    wrong: "si aminah sedang belajer",
     explain: "ya karena salah",
   },
   {
-    correct: "ini semua cuma ngetest",
-    wrong: "ya ini salah harusnya",
+    correct: "ini yang salah",
+    wrong: "ya ini yang saleh",
     explain: "ya karena salah",
   },
   {
     correct: "bapak banyak berbuat salah",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang salah",
     explain: "ya karena salah",
   },
   {
     correct: "tuti menjemur pakaian",
-    wrong: "pakaian menjemur tuti",
+    wrong: "tati menjemur pekaian",
     explain: "ya karena salah",
   },
   {
@@ -316,12 +316,12 @@ const questions = [
   },
   {
     correct: "kepasar bapak pergi",
-    wrong: "ini salah jalan",
+    wrong: "ini salah jelan",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan banyak",
-    wrong: "makan ibu banyak",
+    correct: "ibu makan bamyak",
+    wrong: "ibu kenyang",
     explain: "ya karena salah",
   },
   {
@@ -331,12 +331,12 @@ const questions = [
   },
   {
     correct: "bapak pergi kepasar",
-    wrong: "bapak ke pasar",
+    wrong: "bapak pargi kepasar",
     explain: "ya karena salah",
   },
   {
     correct: "ibu menanam pohon",
-    wrong: "ibu ditanam pohon",
+    wrong: "ibu metanam pohon",
     explain: "ya karena salah",
   },
   {
@@ -361,7 +361,7 @@ const questions = [
   },
   {
     correct: "bambang menjadi presiden",
-    wrong: "presiden dijadikan bambang",
+    wrong: "bambang manjedi presiden",
     explain: "ya karena salah",
   },
   {
@@ -371,7 +371,7 @@ const questions = [
   },
   {
     correct: "siti memakan nasi",
-    wrong: "nasi memakan siti",
+    wrong: "siti memaken nasi",
     explain: "ya karena salah",
   },
   {
@@ -381,42 +381,42 @@ const questions = [
   },
   {
     correct: "budi menyetir mobil",
-    wrong: "budi disetirkan mobil",
+    wrong: "budi disetir mobil",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu mecaci maki",
-    wrong: "ibu maki dicaci",
+    correct: "ibu mencuci baju",
+    wrong: "baju mencuci ibu",
     explain: "ya karena salah",
   },
   {
     correct: "badu memanen padi",
-    wrong: "padi memanen singkong",
+    wrong: "badu memanan padi",
     explain: "ya karena salah",
   },
   {
     correct: "bapak pergi ke pasar",
-    wrong: "pasar di beli bapak",
+    wrong: "bapak pasar ke pergi",
     explain: "ya karena salah",
   },
   {
-    correct: "si aminah belajar mengaji",
-    wrong: "alhamdulillah",
+    correct: "si aminah sedang belajar",
+    wrong: "si aminah sedang belajer",
     explain: "ya karena salah",
   },
   {
-    correct: "ini semua cuma ngetest",
-    wrong: "ya ini salah harusnya",
+    correct: "ini yang salah",
+    wrong: "ya ini yang saleh",
     explain: "ya karena salah",
   },
   {
     correct: "bapak banyak berbuat salah",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang salah",
     explain: "ya karena salah",
   },
   {
     correct: "tuti menjemur pakaian",
-    wrong: "pakaian menjemur tuti",
+    wrong: "tati menjemur pekaian",
     explain: "ya karena salah",
   },
   {
@@ -426,12 +426,12 @@ const questions = [
   },
   {
     correct: "kepasar bapak pergi",
-    wrong: "ini salah jalan",
+    wrong: "ini salah jelan",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan banyak",
-    wrong: "makan ibu banyak",
+    correct: "ibu makan bamyak",
+    wrong: "ibu kenyang",
     explain: "ya karena salah",
   },
   {
@@ -441,12 +441,12 @@ const questions = [
   },
   {
     correct: "bapak pergi kepasar",
-    wrong: "bapak ke pasar",
+    wrong: "bapak pargi kepasar",
     explain: "ya karena salah",
   },
   {
     correct: "ibu menanam pohon",
-    wrong: "ibu ditanam pohon",
+    wrong: "ibu metanam pohon",
     explain: "ya karena salah",
   },
   {
@@ -471,7 +471,7 @@ const questions = [
   },
   {
     correct: "bambang menjadi presiden",
-    wrong: "presiden dijadikan bambang",
+    wrong: "bambang manjedi presiden",
     explain: "ya karena salah",
   },
   {
@@ -481,7 +481,7 @@ const questions = [
   },
   {
     correct: "siti memakan nasi",
-    wrong: "nasi memakan siti",
+    wrong: "siti memaken nasi",
     explain: "ya karena salah",
   },
   {
@@ -491,42 +491,42 @@ const questions = [
   },
   {
     correct: "budi menyetir mobil",
-    wrong: "budi disetirkan mobil",
+    wrong: "budi disetir mobil",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu mecaci maki",
-    wrong: "ibu maki dicaci",
+    correct: "ibu mencuci baju",
+    wrong: "baju mencuci ibu",
     explain: "ya karena salah",
   },
   {
     correct: "badu memanen padi",
-    wrong: "padi memanen singkong",
+    wrong: "badu memanan padi",
     explain: "ya karena salah",
   },
   {
     correct: "bapak pergi ke pasar",
-    wrong: "pasar di beli bapak",
+    wrong: "bapak pasar ke pergi",
     explain: "ya karena salah",
   },
   {
-    correct: "si aminah belajar mengaji",
-    wrong: "alhamdulillah",
+    correct: "si aminah sedang belajar",
+    wrong: "si aminah sedang belajer",
     explain: "ya karena salah",
   },
   {
-    correct: "ini semua cuma ngetest",
-    wrong: "ya ini salah harusnya",
+    correct: "ini yang salah",
+    wrong: "ya ini yang saleh",
     explain: "ya karena salah",
   },
   {
     correct: "bapak banyak berbuat salah",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang salah",
     explain: "ya karena salah",
   },
   {
     correct: "tuti menjemur pakaian",
-    wrong: "pakaian menjemur tuti",
+    wrong: "tati menjemur pekaian",
     explain: "ya karena salah",
   },
   {
@@ -536,12 +536,12 @@ const questions = [
   },
   {
     correct: "kepasar bapak pergi",
-    wrong: "ini salah jalan",
+    wrong: "ini salah jelan",
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan banyak",
-    wrong: "makan ibu banyak",
+    correct: "ibu makan bamyak",
+    wrong: "ibu kenyang",
     explain: "ya karena salah",
   },
   {
