@@ -80,8 +80,8 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "bapak banyak berbuat salah",
-    wrong: "ya ini yang salah",
+    correct: "ya ini yang salah",
+    wrong: "bapak banyek berbuat salah",
     explain: "ya karena salah",
   },
   {
@@ -100,13 +100,13 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan bamyak",
-    wrong: "ibu kenyang",
+    correct: "ibu kenyang",
+    wrong: "ibu makan bamyak",
     explain: "ya karena salah",
   },
   {
     correct: "adi dimarahi ibu",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang selah",
     explain: "ya karena salah",
   },
   {
@@ -190,8 +190,8 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "bapak banyak berbuat salah",
-    wrong: "ya ini yang salah",
+    correct: "ya ini yang salah",
+    wrong: "bapak banyek berbuat salah",
     explain: "ya karena salah",
   },
   {
@@ -210,13 +210,13 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan bamyak",
-    wrong: "ibu kenyang",
+    correct: "ibu kenyang",
+    wrong: "ibu makan bamyak",
     explain: "ya karena salah",
   },
   {
     correct: "adi dimarahi ibu",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang selah",
     explain: "ya karena salah",
   },
   {
@@ -300,8 +300,8 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "bapak banyak berbuat salah",
-    wrong: "ya ini yang salah",
+    correct: "ya ini yang salah",
+    wrong: "bapak banyek berbuat salah",
     explain: "ya karena salah",
   },
   {
@@ -320,13 +320,13 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan bamyak",
-    wrong: "ibu kenyang",
+    correct: "ibu kenyang",
+    wrong: "ibu makan bamyak",
     explain: "ya karena salah",
   },
   {
     correct: "adi dimarahi ibu",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang selah",
     explain: "ya karena salah",
   },
   {
@@ -410,8 +410,8 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "bapak banyak berbuat salah",
-    wrong: "ya ini yang salah",
+    correct: "ya ini yang salah",
+    wrong: "bapak banyek berbuat salah",
     explain: "ya karena salah",
   },
   {
@@ -430,13 +430,13 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan bamyak",
-    wrong: "ibu kenyang",
+    correct: "ibu kenyang",
+    wrong: "ibu makan bamyak",
     explain: "ya karena salah",
   },
   {
     correct: "adi dimarahi ibu",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang selah",
     explain: "ya karena salah",
   },
   {
@@ -520,8 +520,8 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "bapak banyak berbuat salah",
-    wrong: "ya ini yang salah",
+    correct: "ya ini yang salah",
+    wrong: "bapak banyek berbuat salah",
     explain: "ya karena salah",
   },
   {
@@ -540,13 +540,13 @@ const questions = [
     explain: "ya karena salah",
   },
   {
-    correct: "ibu makan bamyak",
-    wrong: "ibu kenyang",
+    correct: "ibu kenyang",
+    wrong: "ibu makan bamyak",
     explain: "ya karena salah",
   },
   {
     correct: "adi dimarahi ibu",
-    wrong: "ya ini salah",
+    wrong: "ya ini yang selah",
     explain: "ya karena salah",
   },
 ];
